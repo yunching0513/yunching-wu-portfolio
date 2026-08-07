@@ -185,23 +185,21 @@ header {
   text-transform: uppercase;
 }
 
-/* Sidebar Vertical Navigation - 導覽縱書於側 */
-.side-nav {
-  position: fixed;
-  left: 60px;
-  top: 180px;
+/* Inline Horizontal Navigation - 橫排導覽列 */
+.nav-inline {
   display: flex;
-  flex-direction: column;
-  gap: 32px;
-  writing-mode: vertical-rl;
-  text-combine-upright: all;
+  flex-wrap: wrap;
+  gap: 28px;
+  justify-content: flex-start;
+  border-bottom: 1px solid var(--line);
+  padding-bottom: 16px;
+  margin-bottom: 64px;
   font-family: var(--font-latin);
   font-size: 13px;
-  letter-spacing: 0.25em;
-  z-index: 90;
+  letter-spacing: var(--ls-wide);
 }
 
-.side-nav a {
+.nav-inline a {
   text-decoration: none;
   color: var(--ink-faint);
   transition: var(--transition);
@@ -209,23 +207,23 @@ header {
   position: relative;
 }
 
-.side-nav a::after {
+.nav-inline a::after {
   content: "";
   position: absolute;
-  right: 50%;
-  bottom: 0;
-  width: 1px;
-  height: 0;
+  left: 0;
+  bottom: -1px;
+  width: 0;
+  height: 1.5px;
   background-color: var(--shu);
   transition: var(--transition);
 }
 
-.side-nav a:hover {
+.nav-inline a:hover {
   color: var(--ink-strong);
 }
 
-.side-nav a:hover::after {
-  height: 16px;
+.nav-inline a:hover::after {
+  width: 100%;
 }
 
 /* Main Layout & Sections */
@@ -665,10 +663,6 @@ footer {
 
 /* Responsive adjustments */
 @media (max-width: 1024px) {
-  .side-nav {
-    display: none; /* 在中小型螢幕隱藏側邊導覽列 */
-  }
-  
   header {
     justify-content: space-between;
     background-color: rgba(242, 242, 242, 0.9);
