@@ -1,0 +1,13 @@
+# Ignore all HTML files except index.html
+*.html
+!index.html
+
+# Ignore system files
+.DS_Store
+Thumbs.db
+
+# Ignore local config/temp folders
+.agents/
+.gemini/
+.vscode/
+node_modules/

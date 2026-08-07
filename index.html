@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Yun-Ching Wu ｜ 個人網頁 ｜ Personal Webpage</title>
+  <meta name="description" content="吳允中 (Yun-Ching Wu) 的個人學術與專業網頁。專注於空間規劃、人本街道設計、主動運輸政策與都市韌性研究。">
+  
+  <!-- Preconnect to Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <!-- Load typography defined in Shinayaka guidelines -->
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,400&family=Noto+Sans+TC:wght@300;400;500&family=Noto+Serif+TC:wght@300;400;500;600&display=swap" rel="stylesheet">
+  
+  <!-- Link to the Shinayaka stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body data-lang="zh">
+
+  <!-- Header & Language Selector -->
+  <header>
+    <div class="lang-selector">
+      <button class="lang-btn active" id="lang-btn-zh" data-l="zh">ZH</button>
+      <button class="lang-btn" id="lang-btn-en" data-l="en">EN</button>
+    </div>
+  </header>
+
+  <!-- Side Vertical Navigation - 導覽縱書於側 -->
+  <nav class="side-nav">
+    <a href="#about"><span lang="zh">關於我</span><span lang="en">About</span></a>
+    <a href="#projects"><span lang="zh">專案</span><span lang="en">Projects</span></a>
+    <a href="#publications"><span lang="zh">著作</span><span lang="en">Publications</span></a>
+    <a href="#experience"><span lang="zh">經歷</span><span lang="en">Experience</span></a>
+    <a href="#education"><span lang="zh">教育</span><span lang="en">Education</span></a>
+    <a href="#skills"><span lang="zh">技能</span><span lang="en">Skills</span></a>
+  </nav>
+
+  <!-- Main Container -->
+  <div class="container fade-in">
+    
+    <!-- Seal & Title Block -->
+    <div class="seal-container">
+      <div class="seal" title="しなやか">韌</div>
+      <div class="logo-text">Yun-Ching Wu</div>
+    </div>
+
+    <!-- Hero Section -->
+    <section id="hero" style="margin-top: 40px;">
+      <h1>
+        <span lang="zh">吳允中</span>
+        <span lang="en" style="font-weight: 300;">Yun-Ching Wu</span>
+      </h1>
+      <div class="subtitle">
+        <span lang="zh">空間 · 社會 · 影響力導向的都市研究者</span>
+        <span lang="en">Spatial, Social, and Impact-Driven Urban Researcher</span>
+      </div>
+      
+      <div class="lead-text">
+        <p lang="zh">一位在空間規劃與社會技術政策領域具備深厚基礎的都市研究者與倡議家。專長於混合方法研究，將數據驅動的洞察與質性敘事相結合，以分析複雜的都市永續發展與移動轉型挑戰。</p>
+        <p lang="en">An urban researcher and advocate with a strong foundation in spatial planning and socio-technical policies. Specializes in mixed-methods research, combining data-driven insights with qualitative narratives to analyze complex sustainability and mobility transition challenges.</p>
+      </div>
+    </section>
+
+    <!-- Profile Section (About) -->
+    <section id="about">
+      <h2 class="sec-title"><span class="num">01</span><span lang="zh">關於</span><span lang="en">About</span></h2>
+      <div class="profile-section">
+        <!-- Photo Frame with automatic placeholder fallback -->
+        <div class="avatar-frame">
+          <img src="avatar.jpg" alt="Yun-Ching Wu" onerror="this.style.display='none'; document.getElementById('avatar-svg').style.display='flex';">
+          <div id="avatar-svg" class="avatar-placeholder-svg">
+            <svg width="64" height="64" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="1.2">
+              <circle cx="32" cy="24" r="10" />
+              <path d="M12 52C12 40.9543 20.9543 32 32 32C43.0457 32 52 40.9543 52 52" />
+              <line x1="32" y1="5" x2="32" y2="10" />
+              <line x1="32" y1="38" x2="32" y2="44" stroke-dasharray="2 2" />
+            </svg>
+          </div>
+        </div>
+        <div class="profile-desc">
+          <p lang="zh">我目前居住於荷蘭代爾夫特（Delft），專注於人本街道設計、主動運輸（Active Mobility）政策以及都市韌性（Urban Resilience）研究。我的研究工作橫跨政策倡議與技術實踐，包含利用開源數據分析街道安全，以及開發輔助公眾參與的 AI 街道設計工具。</p>
+          <p lang="en">Currently based in Delft, the Netherlands, I focus on human-centric street design, active mobility policies, and urban resilience. My work bridges policy advocacy and technical implementation, including utilizing open data for pedestrian environment evaluation and developing AI-assisted participatory street design tools.</p>
+          
+          <div class="profile-contact-list">
+            <div class="profile-contact-item">
+              <span>Email:</span>
+              <a href="mailto:r04544014@ntu.edu.tw">r04544014@ntu.edu.tw</a>
+            </div>
+            <div class="profile-contact-item">
+              <span>Location:</span>
+              <span lang="zh">荷蘭代爾夫特</span>
+              <span lang="en">Delft, the Netherlands</span>
+            </div>
+            <div class="profile-contact-item" style="margin-top: 12px; gap: 16px; flex-direction: row;">
+              <a href="https://www.linkedin.com" target="_blank" style="color: var(--midori);">LinkedIn</a>
+              <span style="color: var(--line);">|</span>
+              <a href="https://www.researchgate.net" target="_blank" style="color: var(--midori);">ResearchGate</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Selected Projects Section -->
+    <section id="projects">
+      <h2 class="sec-title"><span class="num">02</span><span lang="zh">精選專案</span><span lang="en">Selected Projects</span></h2>
+      <div class="project-grid">
+        
+        <!-- Project 1 -->
+        <div class="project-card">
+          <div class="project-header">
+            <div class="project-title">
+              <span lang="zh">台北人行道地圖</span>
+              <span lang="en">Taipei Pedestrian Map</span>
+            </div>
+            <div class="project-links">
+              <a href="#" onclick="event.preventDefault();">Website</a>
+              <a href="#" onclick="event.preventDefault();">Github</a>
+            </div>
+          </div>
+          <div class="project-desc">
+            <p lang="zh">一個持續進行中的專案，利用開放數據檢視並量化城市行人環境，提供高解析度的人本街道空間體檢。</p>
+            <p lang="en">An ongoing project reviewing and analyzing the city’s pedestrian environment and walkability using open spatial data.</p>
+          </div>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="project-card">
+          <div class="project-header">
+            <div class="project-title">
+              <span lang="zh">巴黎社會住宅地圖</span>
+              <span lang="en">Paris Social Housing Map</span>
+            </div>
+            <div class="project-links">
+              <a href="#" onclick="event.preventDefault();">Website</a>
+              <a href="#" onclick="event.preventDefault();">Github</a>
+            </div>
+          </div>
+          <div class="project-desc">
+            <p lang="zh">一幅呈現巴黎都市計畫（PLUb）中社會住宅空間佈局與政策實施成效的交互式地圖。</p>
+            <p lang="en">An interactive map presenting the spatial distribution of social housing policies within the Parisian City Plan (PLUb).</p>
+          </div>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="project-card">
+          <div class="project-header">
+            <div class="project-title">
+              <span lang="zh">樹木健康韌性感知系統</span>
+              <span lang="en">Sensing For Resilience</span>
+            </div>
+            <div class="project-links">
+              <a href="#" onclick="event.preventDefault();">Clip</a>
+              <a href="#" onclick="event.preventDefault();">UI</a>
+            </div>
+          </div>
+          <div class="project-desc">
+            <p lang="zh">於阿姆斯特丹開發的實體環境感測器原型，用以即時監測都市林木健康，增強都市氣候適應力。</p>
+            <p lang="en">A physical sensor prototype and dashboard UI designed to monitor tree well-being and climate resilience in Amsterdam.</p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Publications Section -->
+    <section id="publications">
+      <h2 class="sec-title"><span class="num">03</span><span lang="zh">學術發表</span><span lang="en">Publications</span></h2>
+      <div class="publication-list">
+        
+        <!-- Pub 1 -->
+        <div class="pub-item">
+          <div class="pub-year">2025</div>
+          <div class="pub-content">
+            <span class="pub-title">Developing a citizen-AI street design assistant for road safety</span> 
+            <span lang="zh">[論文專章已投稿] 載於《數據、城市與公民：開放數據如何變革都市與交通規劃——歐亞對話之啟示》，柏林工業大學出版社。</span>
+            <span lang="en">[Chapter submitted for publication]. In <i>Data, cities and citizens: How open data revolutionizes urban and transport planning – Insights from a dialogue between Europe and Asia.</i> , TU Berlin.</span>
+            <a href="#" onclick="event.preventDefault();" class="pub-link">[Link]</a>
+          </div>
+        </div>
+
+        <!-- Pub 2 -->
+        <div class="pub-item">
+          <div class="pub-year">2025</div>
+          <div class="pub-content">
+            <span class="pub-title">Exploring healthy city and 10-minute city planning methods: A case study of the Utrecht Spatial Strategy 2040 (RSU2040)</span> 
+            <span lang="zh">[研討會發表] 國土空間規劃與地方創生再造研討會，台灣新北市。</span>
+            <span lang="en">[Paper presentation]. Symposium on Rethinking National Spatial Planning and Regional Revitalization, New Taipei City, Taiwan.</span>
+            <a href="#" onclick="event.preventDefault();" class="pub-link">[Link]</a>
+          </div>
+        </div>
+
+        <!-- Pub 3 -->
+        <div class="pub-item">
+          <div class="pub-year">2024</div>
+          <div class="pub-content">
+            <span class="pub-title">Developing a citizen AI urban street design assistant for road safety</span> 
+            <span lang="zh">[碩士論文] 荷蘭代爾夫特理工大學學術論文庫。</span>
+            <span lang="en">[Master’s thesis, Delft University of Technology]. TU Delft Repository.</span>
+            <a href="#" onclick="event.preventDefault();" class="pub-link">[Link]</a>
+          </div>
+        </div>
+
+        <!-- Pub 4 -->
+        <div class="pub-item">
+          <div class="pub-year">2019</div>
+          <div class="pub-content">
+            <span class="pub-title">A case study of Tainan Railway Underground Project: Decision-making processes of the urban regime</span> 
+            <span lang="zh">[碩士論文] 國立臺灣大學，國家圖書館學術論文庫。</span>
+            <span lang="en">[Master’s thesis, National Taiwan University]. National Digital Library of Theses and Dissertations in Taiwan.</span>
+            <a href="#" onclick="event.preventDefault();" class="pub-link">[Link]</a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Work Experience Section -->
+    <section id="experience">
+      <h2 class="sec-title"><span class="num">04</span><span lang="zh">工作經歷</span><span lang="en">Work Experience</span></h2>
+      <div class="timeline">
+        
+        <!-- Work 1 -->
+        <div class="timeline-item">
+          <div class="timeline-time">2024.05 - <span lang="zh">現在</span><span lang="en">Now</span></div>
+          <div class="timeline-content">
+            <h3>
+              <span lang="zh">常務監事與共同創辦人 ｜ Vision Zero Taiwan (台灣零死亡倡議)</span>
+              <span lang="en">Executive Supervisor & Co-Founder ｜ Vision Zero Taiwan (NPO)</span>
+            </h3>
+            <div class="timeline-subtitle">Taipei, Taiwan</div>
+            <div class="timeline-body">
+              <p lang="zh">專注於都市移動轉型政策研究、道路安全倡議以及國際交通政策交流合作。</p>
+              <p lang="en">Mobility transition policy research, active transportation advocacy, and international collaboration for safe streets.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Work 2 -->
+        <div class="timeline-item">
+          <div class="timeline-time">2020.07 - 2022.09</div>
+          <div class="timeline-content">
+            <h3>
+              <span lang="zh">助理工程師 ｜ 台北市政府</span>
+              <span lang="en">Associate Engineer ｜ Taipei City Government</span>
+            </h3>
+            <div class="timeline-subtitle">Taipei, Taiwan</div>
+            <div class="timeline-body">
+              <p lang="zh">負責都市更新規劃評估、社會住宅專案管理以及跨局處協調工作。</p>
+              <p lang="en">Urban regeneration assessment and social housing project development and construction management.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education">
+      <h2 class="sec-title"><span class="num">05</span><span lang="zh">教育背景</span><span lang="en">Education</span></h2>
+      <div class="timeline">
+        
+        <!-- Edu 1 -->
+        <div class="timeline-item">
+          <div class="timeline-time">2022.09 - 2024.10</div>
+          <div class="timeline-content">
+            <h3>
+              <span lang="zh">代爾夫特理工大學 & 瓦赫寧恩大學 (AMS 學院)</span>
+              <span lang="en">TU Delft & Wageningen University (AMS Institute)</span>
+            </h3>
+            <div class="timeline-subtitle">Amsterdam / Delft, the Netherlands</div>
+            <div class="timeline-body">
+              <p lang="zh">大都市分析、設計與工程聯合碩士學位 (Metropolitan Analysis, Design, and Engineering - Joint Degree)</p>
+              <p lang="en">Joint Master of Science in Metropolitan Analysis, Design, and Engineering (MSc MADE)</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Edu 2 -->
+        <div class="timeline-item">
+          <div class="timeline-time">2015.09 - 2019.01</div>
+          <div class="timeline-content">
+            <h3>
+              <span lang="zh">國立臺灣大學</span>
+              <span lang="en">National Taiwan University</span>
+            </h3>
+            <div class="timeline-subtitle">Taipei, Taiwan</div>
+            <div class="timeline-body">
+              <p lang="zh">建築與城鄉研究所 碩士 (Building and Planning)</p>
+              <p lang="en">Master of Science in Building and Planning</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Skills & Certificates Section -->
+    <section id="skills">
+      <h2 class="sec-title"><span class="num">06</span><span lang="zh">技能與證書</span><span lang="en">Skills &amp; Certificates</span></h2>
+      <div class="skills-container">
+        
+        <!-- Languages -->
+        <div class="skills-group">
+          <h3 lang="zh">語言能力</h3>
+          <h3 lang="en">Languages</h3>
+          <div class="tags">
+            <span class="tag"><span lang="zh">中文 (母語)</span><span lang="en">Mandarin (Native)</span></span>
+            <span class="tag"><span lang="zh">英文 (專業流利)</span><span lang="en">English (Professional Proficiency)</span></span>
+            <span class="tag"><span lang="zh">荷蘭文 (基礎 A1-A2)</span><span lang="en">Dutch (A1-A2)</span></span>
+            <span class="tag"><span lang="zh">日文 (基礎 A1-A2)</span><span lang="en">Japanese (A1-A2)</span></span>
+          </div>
+        </div>
+
+        <!-- Technical Skills -->
+        <div class="skills-group">
+          <h3 lang="zh">專業技術</h3>
+          <h3 lang="en">Technical Skills</h3>
+          <div class="tags">
+            <span class="tag">R programming</span>
+            <span class="tag">Python</span>
+            <span class="tag">Geographic Information Systems (GIS)</span>
+            <span class="tag">QGIS & Spatial Analysis</span>
+            <span class="tag">Canva</span>
+            <span class="tag">Adobe Design Tools</span>
+          </div>
+        </div>
+
+        <!-- Certificates -->
+        <div class="skills-group">
+          <h3 lang="zh">專業認證</h3>
+          <h3 lang="en">Certificates</h3>
+          <ul class="cert-list">
+            <li class="cert-item">
+              <span lang="zh">韌性與永續城市的街道實驗認證</span>
+              <span lang="en">Street Experiments for Sustainable and Resilient Cities</span>
+            </li>
+            <li class="cert-item">
+              <span lang="zh">永續都市發展專業認證</span>
+              <span lang="en">Sustainable Urban Development</span>
+            </li>
+            <li class="cert-item">
+              <span lang="zh">基於 AI 與機器學習的進階 QGIS 空間分析</span>
+              <span lang="en">Advanced QGIS Analysis with AI and Machine Learning</span>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Awards -->
+        <div class="skills-group">
+          <h3 lang="zh">獲獎與榮譽</h3>
+          <h3 lang="en">Awards &amp; Fellowships</h3>
+          <ul class="cert-list">
+            <li class="cert-item">
+              <span lang="zh">教育部留學獎學金 (2022.09 - 2025.09)</span>
+              <span lang="en">Government Fellowship for Overseas Study, Ministry of Education, Taiwan (2022.09 - 2025.09)</span>
+            </li>
+            <li class="cert-item">
+              <span lang="zh">代爾夫特理工大學圖書館 GenAI In The Fly 競賽學者組第二名 (2024.12)</span>
+              <span lang="en">2nd place in Scholar Category, GenAI in the Fly Competition, TU Delft Library (12.2024)</span>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Reference Section -->
+    <section id="reference">
+      <h2 class="sec-title"><span class="num">07</span><span lang="zh">推薦人</span><span lang="en">References</span></h2>
+      <div class="ref-grid">
+        
+        <!-- Ref 1 -->
+        <div class="ref-card">
+          <div class="ref-name">Dr. George Liu</div>
+          <div class="ref-title">
+            <span lang="zh">慕尼黑工業大學資深研究員 ｜ CityUX 創辦人</span>
+            <span lang="en">Senior Researcher at Technical University of Munich, Founder of CityUX</span>
+          </div>
+          <div class="ref-email">
+            Email: <a href="mailto:george.liu@tum.de">george.liu@tum.de</a>
+          </div>
+        </div>
+
+        <!-- Ref 2 -->
+        <div class="ref-card">
+          <div class="ref-name">Prof.dr. M.P. (Marjan) Hagenzieker</div>
+          <div class="ref-title">
+            <span lang="zh">碩士論文指導教授 ｜ 荷蘭代爾夫特理工大學</span>
+            <span lang="en">Thesis Supervisor, TU Delft</span>
+          </div>
+          <div class="ref-email">
+            Email: <a href="mailto:m.p.hagenzieker@tudelft.nl">m.p.hagenzieker@tudelft.nl</a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div>
+        <span class="footer-seal">韌</span>
+        <span style="margin-left: 8px;">Yun-Ching Wu &copy; 2026</span>
+      </div>
+      <div>
+        <span lang="zh">しなやか ｜ 柔韌而優雅的都市生活備忘錄</span>
+        <span lang="en">Shinayaka ｜ Bending but not breaking, crafted in space</span>
+      </div>
+    </footer>
+
+  </div>
+
+  <!-- JavaScript logic for language switching -->
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const buttons = document.querySelectorAll('.lang-selector button');
+      const htmlLang = { zh: 'zh-Hant', en: 'en' };
+      
+      buttons.forEach(button => {
+        button.addEventListener('click', () => {
+          const lang = button.dataset.l;
+          
+          // Update active button styling
+          buttons.forEach(btn => btn.classList.remove('active'));
+          button.classList.add('active');
+          
+          // Toggle language dataset on body
+          document.body.dataset.lang = lang;
+          document.documentElement.lang = htmlLang[lang];
+        });
+      });
+    });
+  </script>
+</body>
+</html>
